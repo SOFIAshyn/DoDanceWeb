@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/DoDanceWeb/static/css/main.15b70ff7.chunk.css",
+    "main.js": "/DoDanceWeb/static/js/main.03371366.chunk.js",
+    "main.js.map": "/DoDanceWeb/static/js/main.03371366.chunk.js.map",
+    "runtime-main.js": "/DoDanceWeb/static/js/runtime-main.1666e3e6.js",
+    "runtime-main.js.map": "/DoDanceWeb/static/js/runtime-main.1666e3e6.js.map",
+    "static/js/2.50ac6bce.chunk.js": "/DoDanceWeb/static/js/2.50ac6bce.chunk.js",
+    "static/js/2.50ac6bce.chunk.js.map": "/DoDanceWeb/static/js/2.50ac6bce.chunk.js.map",
+    "index.html": "/DoDanceWeb/index.html",
+    "precache-manifest.58bf7e439b0838276951f7fe45211c57.js": "/DoDanceWeb/precache-manifest.58bf7e439b0838276951f7fe45211c57.js",
+    "service-worker.js": "/DoDanceWeb/service-worker.js",
+    "static/css/main.15b70ff7.chunk.css.map": "/DoDanceWeb/static/css/main.15b70ff7.chunk.css.map",
+    "static/js/2.50ac6bce.chunk.js.LICENSE.txt": "/DoDanceWeb/static/js/2.50ac6bce.chunk.js.LICENSE.txt",
+    "static/media/CoreSansA45Regular.otf": "/DoDanceWeb/static/media/CoreSansA45Regular.7b934ad2.otf",
+    "static/media/Kormotech.ttf": "/DoDanceWeb/static/media/Kormotech.9cd79745.ttf",
+    "static/media/name-white.png": "/DoDanceWeb/static/media/name-white.80cf4def.png",
+    "static/media/profile-white.png": "/DoDanceWeb/static/media/profile-white.4699313f.png",
+    "static/media/profile.jpeg": "/DoDanceWeb/static/media/profile.4dc1da8e.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1666e3e6.js",
+    "static/js/2.50ac6bce.chunk.js",
+    "static/css/main.15b70ff7.chunk.css",
+    "static/js/main.03371366.chunk.js"
+  ]
+}

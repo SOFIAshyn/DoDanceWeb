@@ -1,0 +1,25 @@
+:root {
+    --black: #2D2D2A;
+    --yellow: #FFD524;
+    --red: #EA5636;
+    --blue: #4674B8;
+    --green: #60AE6D;
+    --white: #F8F5F4;
+    --border: 3px;
+    --bold-font: 'Kromotech';
+    --normal-font: 'Open Sans';
+    --bold-data: 32px;
+    --normal-data: 24px;
+    --page-container: 70%;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--normal-font);
+    font-size: var(--normal-data);
+}
+
+.profileDataBold {
+    font-family: var(--bold-font);
+}

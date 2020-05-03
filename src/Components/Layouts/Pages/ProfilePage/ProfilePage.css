@@ -1,0 +1,42 @@
+.mainProfileContainer {
+    position: relative;
+    width: var(--page-container);
+    margin: auto;
+    height: 100%;
+}
+
+.profileMainPhoto {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    margin-left: 75px;
+    border-radius: 50%;
+    border: 4px var(--white) solid;
+}
+
+/* Profile data */
+.allProfileData {
+    margin: 50px 0;
+}
+
+hr {
+    border-radius: 10px;
+}
+
+.totalDataBlue {
+    border: var(--border) var(--blue) solid;
+}
+
+.totalDataRed {
+    border: var(--border) var(--red) solid;
+}
+
+/* each row Profile Data */
+.bigProfileData p {
+    font-size: var(--bold-data);
+}
+
+.totalData p {
+    height: 25px;
+    margin: 5px;
+}
