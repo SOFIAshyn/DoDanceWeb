@@ -3,7 +3,9 @@ import homeWhite from "../../../img/icons/home-white.png";
 import './Header.css'
 
 const Home = () => (
-    <img className={'menuItem'} src={homeWhite} alt="home" />
+    <div className={'headerImg'}>
+        <img className={'menuItem'} src={homeWhite} alt="home" />
+    </div>
 );
 
 export default Home;

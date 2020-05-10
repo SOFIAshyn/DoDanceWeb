@@ -1,11 +1,5 @@
-/*.uploadsContainer {*/
-/*    width: var(--page-container);*/
-/*    margin: auto;*/
-/*}*/
-
 .videoUpload {
-    width: 354px;
-    height: 150px;
+    width: 90%;
     border-radius: 10px;
 }
 

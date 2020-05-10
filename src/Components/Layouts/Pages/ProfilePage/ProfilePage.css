@@ -6,10 +6,9 @@
 }
 
 .profileMainPhoto {
-    height: 320px;
-    width: 320px;
+    width: 75%;
     object-fit: cover;
-    margin-left: 75px;
+    margin-left: 30px;
     border-radius: 50%;
     border: 4px var(--white) solid;
 }
@@ -31,6 +30,14 @@ hr {
     border: var(--border) var(--red) solid;
 }
 
+.totalPoints {
+    height: 40px;
+}
+
+.totalPoints img {
+    height: inherit;
+}
+
 /* each row Profile Data */
 .bigProfileData p {
     font-size: var(--bold-data);
@@ -39,4 +46,24 @@ hr {
 .totalData p {
     height: 25px;
     margin: 5px;
+}
+
+.perCoursePoints {
+    margin-left: 100px;
+}
+
+.totalCoursePoints {
+    margin-left: 100%;
+}
+
+.courseTotalData {
+    margin-left: 5%;
+}
+
+.iconDataTotalCourse {
+    padding: 30px 0 ;
+}
+
+.iconDataTotalCourse div {
+    padding-top: 10px;
 }

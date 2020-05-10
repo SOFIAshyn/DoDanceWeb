@@ -3,26 +3,22 @@ import Grid from "@material-ui/core/Grid";
 
 
 export default class FooterItems extends React.Component {
-     constructor() {
+    constructor() {
         super();
-        this.state = {
-            about: 'https://about.instagram.com/about-us',
-            help: 'https://help.instagram.com/',
-            api: 'https://www.instagram.com/developer/'
-        };
+        this.state = {};
     }
 
     render () {
          return (
             <React.Fragment>
                 <Grid item xs={3}>
-                    <a href={this.state.about}>ABOUT</a>
+                    <a href='https://about.instagram.com/about-us'>ABOUT</a>
                 </Grid>
                 <Grid item xs={3}>
-                    <a href={this.state.help}>HELP</a>
+                    <a href='https://help.instagram.com/'>HELP</a>
                 </Grid>
                 <Grid item xs={2}>
-                    <a href={this.state.api}>API</a>
+                    <a href='https://www.instagram.com/developer/'>API</a>
                 </Grid>
             </React.Fragment>
          )

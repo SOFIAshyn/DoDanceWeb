@@ -23,3 +23,9 @@ body {
 .profileDataBold {
     font-family: var(--bold-font);
 }
+
+.profileDataNormal {
+    color: var(--white);
+    font-family: var(--normal-font);
+    font-size: var(--normal-data);
+}

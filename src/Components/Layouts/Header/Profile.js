@@ -3,7 +3,9 @@ import profileWhite from "../../../img/icons/profile-white.png";
 import './Header.css'
 
 const Profile = () => (
-    <img className={'menuItem'} src={profileWhite} alt="search" />
+    <div className={'headerImg'}>
+        <img className={'menuItem'} src={profileWhite} alt="search" />
+    </div>
 );
 
 export default Profile;

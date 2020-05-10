@@ -19,6 +19,7 @@ export default class MenuIcons extends React.Component {
     render () {
          return (
             <React.Fragment>
+            <Grid container item xs={5} spacing={10}>
                 <Grid item xs={1}>
                     <Home/>
                 </Grid>
@@ -34,6 +35,7 @@ export default class MenuIcons extends React.Component {
                 <Grid item xs={1}>
                     <Profile/>
                 </Grid>
+            </Grid>
             </React.Fragment>
          )
     }

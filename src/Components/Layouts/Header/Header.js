@@ -17,9 +17,7 @@ export default class Header extends React.Component {
                     <Grid item xs={7}>
                         <Logo/>
                     </Grid>
-                    <Grid container item xs={5} spacing={10}>
-                        <MenuIcons/>
-                    </Grid>
+                    <MenuIcons/>
                 </Grid>
             </div>
         )

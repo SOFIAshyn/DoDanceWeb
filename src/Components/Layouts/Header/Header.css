@@ -6,19 +6,22 @@
     height: 50px;
     width: var(--page-container);
     padding: 10px;
-    width: var(--page-container);
     margin: 10px auto;
+    display: block;
+}
+
+.headerImg {
+    height: 40px;
+}
+
+img {
+    height: inherit;
 }
 
 .menuItems {
     float: right;
 }
 
-img {
-    height: 40px;
-}
-
 .doDanceNameLogo {
     padding-left: 100px;
 }
-
