@@ -3,8 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import Logo from './Logo.js';
 import MenuIcons from './MenuIcons.js';
 import './Header.css';
-import { Switch, Route, Link, NavLink } from "react-router-dom";
-
 
 export default class Header extends React.Component {
     constructor() {

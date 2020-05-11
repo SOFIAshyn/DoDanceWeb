@@ -1,10 +1,22 @@
 import React from "react";
 import './Header.css'
 
-const Notification = () => (
-    <div className={'headerImg'}>
-        <img className={'menuItem'} src={"/image/icons/notify-white.png"} alt="Notification" />
-    </div>
-);
+export default class Notification extends React.Component {
+    constructor() {
+        super();
+        this.selectedIcon = "/image/icons/notify-black.png"; // TODO: change icon
+        this.notSelectedIcon = "/image/icons/notify-white.png";
+    }
 
-export default Notification;
+    render() {
+        return (
+            <div className={'headerImg'} id={'home'}>
+                <img
+                    className={'menuItem'}
+                    src={this.notSelectedIcon}
+                    alt="Notification"
+                />
+            </div>
+        );
+    }
+};

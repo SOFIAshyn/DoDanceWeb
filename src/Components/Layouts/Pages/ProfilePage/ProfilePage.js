@@ -15,7 +15,6 @@ export default class ProfilePage extends React.Component {
         fetch('/profile').then(resp => {
             return resp.json();
         }).then( body => {
-            // console.log(body);
             this.setState({
                 profile: body,
             })

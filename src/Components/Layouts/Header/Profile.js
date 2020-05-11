@@ -1,10 +1,22 @@
 import React from "react";
 import './Header.css'
 
-const Profile = () => (
-    <div className={'headerImg'}>
-        <img className={'menuItem'} src={"/image/icons/profile-white.png"} alt="search" />
-    </div>
-);
+export default class Profile extends React.Component {
+    constructor() {
+        super();
+        this.selectedIcon = "/image/icons/profile-black.png"; // TODO: change icon
+        this.notSelectedIcon = "/image/icons/profile-white.png";
+    }
 
-export default Profile;
+    render() {
+        return (
+            <div className={'headerImg'} id={'home'}>
+                <img
+                    className={'menuItem'}
+                    src={this.notSelectedIcon}
+                    alt="Notification"
+                />
+            </div>
+        );
+    }
+};
