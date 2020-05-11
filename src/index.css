@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'),
+       url('./fonts/CoreSansA45Regular.otf') format('opentype'); /* Safari, Android, iOS */
+}
+
+
+@font-face {
+  font-family: 'Kromotech';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kromotech'),
+       url('./fonts/Kormotech.ttf') format('truetype'); /* Safari, Android, iOS */
+}

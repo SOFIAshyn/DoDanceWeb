@@ -1,0 +1,16 @@
+.videoUpload {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.uploadsContainer div div:nth-child(3n) iframe {
+    border: var(--border) var(--red) solid;
+}
+
+.uploadsContainer div div:nth-child(3n+1) iframe {
+    border: var(--border) var(--yellow) solid;
+}
+
+.uploadsContainer div div:nth-child(3n+2) iframe {
+    border: var(--border) var(--green) solid;
+}

@@ -1,0 +1,27 @@
+.mainMenu {
+    position: relative;
+    background-color: #2D2D2A;
+    border: var(--border) #EA5636 solid;
+    border-radius: 100px;
+    height: 50px;
+    width: var(--page-container);
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+.headerImg {
+    height: 40px;
+}
+
+img {
+    height: inherit;
+}
+
+.menuItems {
+    float: right;
+}
+
+.doDanceNameLogo {
+    padding-left: 100px;
+}
