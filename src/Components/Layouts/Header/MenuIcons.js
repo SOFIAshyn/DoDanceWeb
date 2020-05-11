@@ -6,7 +6,7 @@ import Upload from './Upload.js';
 import Profile from './Profile.js';
 import Notification from './Notification.js';
 import './Header.css';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default class MenuIcons extends React.Component {

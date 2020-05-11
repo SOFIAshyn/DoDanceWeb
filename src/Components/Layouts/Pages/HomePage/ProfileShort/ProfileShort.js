@@ -4,17 +4,21 @@ import ProfileShortPhoto from "./ProfileShortPhoto";
 import ProfileShortData from "./ProfileShortData";
 import '../HomePage.css'
 
-const ProfileInfo = () => (
-    <React.Fragment>
-    <Grid container xs={5} >
-        <Grid item xs={2}>
-            <ProfileShortPhoto/>
-        </Grid>
-        <Grid item xs={3}>
-            <ProfileShortData/>
-        </Grid>
-    </Grid>
-    </React.Fragment>
-);
+const ProfileShort= (props) => {
+    const {profileInfo} = props;
 
-export default ProfileInfo;
+    return (
+        <div className={'shortUserData'}>
+        <Grid container xs={4}>
+            <Grid item xs={2}>
+                <ProfileShortPhoto photo={profileInfo.photo}/>
+            </Grid>
+            <Grid item xs={2}>
+                <ProfileShortData name={profileInfo.name} surname={profileInfo.surname}/>
+            </Grid>
+        </Grid>
+        </div>
+    );
+}
+
+export default ProfileShort;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProfileShortPhoto = (props) => {
+const UserUploadsPhoto = (props) => {
     const {photo} = props;
 
     return (
@@ -8,4 +8,4 @@ const ProfileShortPhoto = (props) => {
     );
 };
 
-export default ProfileShortPhoto;
+export default UserUploadsPhoto;
