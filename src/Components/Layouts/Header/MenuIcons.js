@@ -5,7 +5,8 @@ import Search from './Search.js';
 import Upload from './Upload.js';
 import Profile from './Profile.js';
 import Notification from './Notification.js';
-import './Header.css'
+import './Header.css';
+import { Switch, Route, Link, NavLink } from "react-router-dom";
 
 
 export default class MenuIcons extends React.Component {
@@ -19,9 +20,12 @@ export default class MenuIcons extends React.Component {
     render () {
          return (
             <React.Fragment>
+            <Switch>
             <Grid container item xs={5} spacing={10}>
                 <Grid item xs={1}>
-                    <Home/>
+                    <Route path={'/'}>
+                        <Home/>
+                    </Route>
                 </Grid>
                 <Grid item xs={1}>
                     <Search/>
@@ -36,6 +40,7 @@ export default class MenuIcons extends React.Component {
                     <Profile/>
                 </Grid>
             </Grid>
+            </Switch>
             </React.Fragment>
          )
     }

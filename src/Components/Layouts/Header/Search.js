@@ -1,10 +1,9 @@
 import React from "react";
-import searchWhite from "../../../img/icons/search-white.png";
 import './Header.css'
 
 const Search = () => (
     <div className={'headerImg'}>
-        <img className={'menuItem'} src={searchWhite} alt="search" />
+        <img className={'menuItem'} src={"/image/icons/search-white.png"} alt="search" />
     </div>
 );
 

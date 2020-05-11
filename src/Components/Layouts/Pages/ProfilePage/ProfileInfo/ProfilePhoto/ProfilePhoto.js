@@ -1,9 +1,14 @@
 import React from "react";
-import profilePhoto from "../../../../../../img/profile.jpeg";
-import '../../ProfilePage.css'
+import '../../ProfilePage.css';
 
-const ProfilePhoto = () => (
-    <img className={'profileMainPhoto'} src={profilePhoto} alt="Profile Main Photo"/>
-);
+const ProfilePhoto = (props) => {
+    const {photo} = props;
+
+    return (
+        <React.Fragment>
+            <img className={'profileMainPhoto'} src={photo} alt={'Profile Photo'}/>
+        </React.Fragment>
+    );
+};
 
 export default ProfilePhoto;

@@ -1,10 +1,9 @@
 import React from "react";
-import uploadWhite from "../../../img/icons/add-white.png";
 import './Header.css'
 
 const Upload = () => (
     <div className={'headerImg'}>
-        <img className={'menuItem'} src={uploadWhite} alt="search" />
+        <img className={'menuItem'} src={"/image/icons/add-white.png"} alt="search" />
     </div>
 );
 

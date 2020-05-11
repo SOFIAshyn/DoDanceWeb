@@ -1,0 +1,150 @@
+{ "profile": {
+    "id": 0,
+    "name": "Sofiia",
+    "surname": "Petryshyn",
+    "photo": "/image/profile.jpeg",
+    "telegram": "sofiyka",
+    "telegramLink": "https://web.telegram.org/#/login",
+    "instagram": "sofia.petryshyn",
+    "instagramLink": "https://www.instagram.com/sofia.petryshyn/",
+    "courses": [{
+      "id": 0,
+      "courseName": "dance_addiction_1",
+      "value": 78
+    }, {
+      "id": 2,
+      "courseName": "dance_addiction_2",
+      "value": 50
+    }],
+    "total": 128,
+    "uploads": [{
+        "id": 0,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 1,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 2,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 3,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 4,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 5,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }
+    ]
+  },
+  "profileNotifications": [
+    {
+      "id": 0,
+      "topic": "Yana Olefir left the feedback on your homework",
+      "time": "2020-04-23T18:25:43.511Z"
+    }, {
+      "id": 1,
+      "topic": "Marta Kits left the feedback on your homework",
+      "time": "2020-04-21T12:25:43.511Z"
+    }
+  ],
+  "profileNewsFeed": [
+    {
+      "id": 0,
+      "name": "Olya",
+      "surname": "Petryshyn",
+      "photo": "/image/profile.jpeg",
+      "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0",
+      "description": "This choreography was given by Yana Olefir. I do really enjoy it!",
+      "hashtags": [
+        {
+          "id": 0,
+          "hashname": "dance_addition_1"
+        }, {
+          "id": 1,
+          "hashname": "hw_2"
+        }
+      ]
+    }
+  ],
+  "userAccounts": [{
+    "id": 0,
+    "name": "Sofiia",
+    "surname": "Petryshyn",
+    "telegram": "sofiyka",
+    "telegramLink": "https://web.telegram.org/#/login",
+    "instagram": "sofia.petryshyn",
+    "instagramLink": "https://www.instagram.com/sofia.petryshyn/",
+    "courses": [{
+      "id": 0,
+      "courseName": "dance_addiction_1",
+      "value": 78
+    }, {
+      "id": 2,
+      "courseName": "dance_addiction_1",
+      "value": 50
+    }],
+    "total": 128,
+    "uploads": [{
+        "id": 0,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 1,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 2,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 3,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 4,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }, {
+        "id": 5,
+        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Olya",
+    "surname": "Petryshyn",
+    "photo": "/image/profile.jpeg",
+    "telegram": "olya.petryshyn",
+    "telegramLink": "https://web.telegram.org/#/login",
+    "instagram": "olya.petryshyn",
+    "instagramLink": "https://www.instagram.com/olya_petryshyn/",
+    "courses": [{
+      "id": 0,
+      "courseName": "dance_addiction_1",
+      "value": 23
+    }, {
+      "id": 1,
+      "courseName": "iLikeDance_1",
+      "value": 30
+    }],
+    "total": 53,
+    "uploads": [{
+        "id": 0,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }, {
+        "id": 1,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }, {
+        "id": 2,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }, {
+        "id": 3,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }, {
+        "id": 4,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }, {
+        "id": 5,
+        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+      }
+    ]
+  }
+]}

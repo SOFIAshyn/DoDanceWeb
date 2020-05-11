@@ -1,10 +1,9 @@
 import React from "react";
-import profileWhite from "../../../img/icons/profile-white.png";
 import './Header.css'
 
 const Profile = () => (
     <div className={'headerImg'}>
-        <img className={'menuItem'} src={profileWhite} alt="search" />
+        <img className={'menuItem'} src={"/image/icons/profile-white.png"} alt="search" />
     </div>
 );
 
