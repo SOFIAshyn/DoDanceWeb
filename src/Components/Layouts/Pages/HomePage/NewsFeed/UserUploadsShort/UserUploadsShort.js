@@ -8,11 +8,11 @@ const ProfileShort= (props) => {
     const {name, surname, photo} = props;
 
     return (
-        <Grid container xs={8}>
-            <Grid item xs={2}>
+        <Grid container spacing={1}>
+            <Grid item xs={1}>
                 <UserUploadsPhoto photo={photo}/>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={11}>
                 <UserUploadsData name={name} surname={surname}/>
             </Grid>
         </Grid>

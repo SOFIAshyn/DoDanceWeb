@@ -1,6 +1,43 @@
 .shortUserData {
     padding: 10px;
+    margin: 10px 0;
     height: 50px;
     border: var(--blue) var(--border) solid;
     border-radius: 100px;
+}
+
+.uploadsSubContainer {
+    padding: 20px 0;
+}
+
+.iFrameNewsContainer {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.uploadsSubContainer iframe {
+    border: var(--blue) var(--border) solid;
+    border-radius: 10px;
+    height: 95%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*width: 100%;*/
+}
+
+.profileShortPhoto {
+    width: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px var(--white) solid;
+}
+
+.userShortProfile {
+    margin: 10px 0;
 }

@@ -10,7 +10,7 @@
     --normal-font: 'Open Sans';
     --bold-data: 32px;
     --normal-data: 24px;
-    --page-container: 70%;
+    --page-container: 80%;
 }
 
 body {
@@ -28,4 +28,13 @@ body {
     color: var(--white);
     font-family: var(--normal-font);
     font-size: var(--normal-data);
+}
+
+.page {
+    width: var(--page-container);
+    margin: auto;
+}
+
+.hashtag {
+    color: var(--yellow);
 }

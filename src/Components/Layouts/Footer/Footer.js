@@ -13,11 +13,11 @@ export default class Header extends React.Component {
     render() {
         return (
             <footer>
-                <Grid container item xs={12} spacing={0}>
-                    <Grid container item xs={8} spacing={0}>
+                <Grid container spacing={1}>
+                    <Grid container item xs={8}>
                         <FooterItems/>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Licence/>
                     </Grid>
                 </Grid>

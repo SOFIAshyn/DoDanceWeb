@@ -8,17 +8,15 @@ const ProfileShort= (props) => {
     const {profileInfo} = props;
 
     return (
-        <div className={'shortUserData'}>
-        <Grid container xs={4}>
+        <Grid container spacing={1}>
             <Grid item xs={2}>
                 <ProfileShortPhoto photo={profileInfo.photo} />
             </Grid>
-            <Grid item xs={2}>
-                <ProfileShortData name={profileInfo.name} surname={profileInfo.surname}/>
+            <Grid item xs={10}>
+                <ProfileShortData fullname={profileInfo.fullname} />
             </Grid>
         </Grid>
-        </div>
-    );
-}
+    )
+};
 
 export default ProfileShort;

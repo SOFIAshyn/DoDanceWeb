@@ -1,10 +1,10 @@
 import React from "react";
 
 const UploadedDesc = ({description, hashtags}) => (
-    <div>
-        <span>{description}</span>
+    <div className={'videoDescription'}>
+        <span>{description}<br/></span>
         {hashtags && hashtags.map((hashtag) => (
-            <span>#{hashtag}</span>
+            <span className={'hashtag'}>#{hashtag.hashname} </span>
         ))
         }
     </div>

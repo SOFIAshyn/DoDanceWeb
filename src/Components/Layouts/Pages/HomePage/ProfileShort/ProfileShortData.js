@@ -1,10 +1,9 @@
 import React from "react";
 
-const ProfileData = ({name, surname}) => {
-
+const ProfileData = ({fullname}) => {
     return (
-    <div>
-        <p className={'profileDataBold'}>{name} {surname}</p>
+    <div className={'userShortProfile'}>
+        <span className={'profileDataBold'}>{fullname}</span>
     </div>
     )
 };

@@ -1,7 +1,6 @@
 import React from "react";
-import Grid from '@material-ui/core/Grid';
 import '../HomePage.css';
-import UploadedVideo from "./NewsVideo";
+import UploadedVideo from "./UploadedVideo";
 import UserUploadsShort from "./UserUploadsShort/UserUploadsShort";
 import UploadedDesc from "./UploadedDesc";
 
@@ -28,18 +27,14 @@ export default class NewsVideo extends React.Component{
     render() {
         return (
             <div className={'uploadsContainer'}>
-            <Grid container xs={8} spacing={1}>
-                {this.state.profileNewsFeed && this.state.profileNewsFeed.map((upload) => (
-                    <React.Fragment>
-                        <UserUploadsShort name={upload.name} surname={upload.surname} photo={upload.photo}/>
-                        {/*<UploadedVideo uploadLink={upload.uploadLink} />*/}
-                        {/*<iframe className={'videoUpload'} src={upload.uploadLink}>*/}
-                        {/*</iframe>*/}
-                        {/*<UploadedDesc description={upload.description} hashtags={upload.hashtags} />*/}
-                    </React.Fragment>
-                    )
-                )}
-            </Grid>
+            {this.state.profileNewsFeed && this.state.profileNewsFeed.map((upload) => (
+                <div className={'uploadsSubContainer'}>
+                    <UserUploadsShort key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>
+                    <UploadedVideo key={upload.id} uploadLink={upload.uploadLink} />
+                    <UploadedDesc key={upload.id} description={upload.description} hashtags={upload.hashtags} />
+                </div>
+                )
+            )}
             </div>
         );
     }
