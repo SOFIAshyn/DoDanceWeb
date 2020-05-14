@@ -163,5 +163,35 @@
         "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
       }
     ]
-  }
-]}
+  }],
+  "searchUploads": [
+    {
+      "id": 0,
+      "user": {
+        "id": 1,
+        "name": "Olya",
+        "surname": "Petryshyn",
+        "photo": "/image/profile.jpeg"
+      },
+      "video": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+    }, {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "name": "Olya",
+        "surname": "Petryshyn",
+        "photo": "/image/profile.jpeg"
+      },
+      "video": "https://www.youtube.com/embed/oA6vjBPlmCE?autoplay=0"
+    }, {
+      "id": 2,
+      "user": {
+        "id": 0,
+        "name": "Sofiia",
+        "surname": "Petryshyn",
+        "photo": "/image/profile.jpeg"
+      },
+      "video": "https://www.youtube.com/embed/i2qG4weEbLo?autoplay=0"
+    }
+  ]
+}

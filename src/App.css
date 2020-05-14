@@ -38,3 +38,7 @@ body {
 .hashtag {
     color: var(--yellow);
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}

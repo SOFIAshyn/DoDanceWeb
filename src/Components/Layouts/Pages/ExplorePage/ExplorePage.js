@@ -1,21 +1,23 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import ProfilePhoto from "../ProfilePage/ProfileInfo/ProfilePhoto/ProfilePhoto";
-import ProfileData from "../ProfilePage/ProfileInfo/ProfileData/ProfileData";
-// import ProfileInfo from "../ProfilePage/ProfileInfo/ProfileInfo";
+import SearchForm from './SearchForm';
+import SearchUploads from './SearchUploads';
+import './ExplorePage.css'
 
-const ExplorePage = () => {
-    return (
-        <h1>Explore Page</h1>
-        // {/*<React.Fragment>*/}
-        // {/*<Grid container xs={12} >*/}
-        // {/*    <Grid item xs={7}>*/}
-        // {/*        <NewsVideo/>*/}
-        // {/*    </Grid>*/}
-        // {/*    <ProfileShort/>*/}
-        // {/*</Grid>*/}
-        // {/*</React.Fragment>*/}
-    );
+export default class ExplorePage extends React.Component {
+    constructor() {
+        super();
+        this.state = {}
+    }
+
+    render() {
+        return (
+            <div className="mainExploreUploadsContainer">
+                <SearchForm />
+                <Grid container spacing={1}>
+                    {/*<SearchUploads />*/}
+                </Grid>
+            </div>
+        );
+    }
 };
-
-export default ExplorePage;

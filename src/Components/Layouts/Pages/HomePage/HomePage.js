@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
             <div className={'page'}>
             <Grid container spacing={1}>
                 <Grid container item xs={8} spacing={1}>
-                    <NewsVideo  key={this.state.profile.id} profileInfo={this.state.profile} />
+                    <NewsVideo key={this.state.profile.id} profileInfo={this.state.profile} />
                 </Grid>
                 <Grid container item xs={4} spacing={1}>
                     <div className={'shortUserData'}>
