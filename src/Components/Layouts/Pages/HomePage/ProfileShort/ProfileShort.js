@@ -11,7 +11,7 @@ const ProfileShort= (props) => {
         <div className={'shortUserData'}>
         <Grid container xs={4}>
             <Grid item xs={2}>
-                <ProfileShortPhoto photo={profileInfo.photo}/>
+                <ProfileShortPhoto photo={profileInfo.photo} />
             </Grid>
             <Grid item xs={2}>
                 <ProfileShortData name={profileInfo.name} surname={profileInfo.surname}/>

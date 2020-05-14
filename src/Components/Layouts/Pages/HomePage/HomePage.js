@@ -25,9 +25,9 @@ export default class HomePage extends React.Component {
         return (
             <React.Fragment>
             <Grid container xs={12} spacing={1}>
-                {/*<Grid item xs={8} spacing={1}>*/}
-                {/*    <NewsVideo/>*/}
-                {/*</Grid>*/}
+                <Grid item xs={8} spacing={1}>
+                    <NewsVideo profileInfo={this.state.profile} />
+                </Grid>
                 <ProfileShort key={this.state.profile.id} profileInfo={this.state.profile} />
             </Grid>
             </React.Fragment>
