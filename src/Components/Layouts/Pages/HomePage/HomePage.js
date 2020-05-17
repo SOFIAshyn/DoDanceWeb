@@ -23,14 +23,18 @@ export default class HomePage extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-            <Grid container xs={12} spacing={1}>
-                {/*<Grid item xs={8} spacing={1}>*/}
-                {/*    <NewsVideo/>*/}
-                {/*</Grid>*/}
-                <ProfileShort key={this.state.profile.id} profileInfo={this.state.profile} />
+            <div className={'page'}>
+            <Grid container spacing={1}>
+                <Grid container item xs={8} spacing={1}>
+                    <NewsVideo key={this.state.profile.id} profileInfo={this.state.profile} />
+                </Grid>
+                <Grid container item xs={4} spacing={1}>
+                    <div className={'shortUserData'}>
+                    <ProfileShort key={this.state.profile.id} profileInfo={this.state.profile} />
+                    </div>
+                </Grid>
             </Grid>
-            </React.Fragment>
+            </div>
         )
     };
 };

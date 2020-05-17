@@ -11,10 +11,10 @@ export default class FooterItems extends React.Component {
     render () {
          return (
             <React.Fragment>
-                <Grid item xs={3}>
-                    <a href='https://about.instagram.com/about-us'>ABOUT</a>
+                <Grid item xs={2}>
+                    <a id={'firstFooterEl'} href='https://about.instagram.com/about-us'>ABOUT</a>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={2}>
                     <a href='https://help.instagram.com/'>HELP</a>
                 </Grid>
                 <Grid item xs={2}>

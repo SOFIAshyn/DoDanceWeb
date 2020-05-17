@@ -4,7 +4,7 @@ const UserUploadsPhoto = (props) => {
     const {photo} = props;
 
     return (
-        <img className={'profileMainPhoto'} src={photo} alt="Profile Photo"/>
+        <img className={'profileShortPhoto'} src={photo} alt="Profile Photo"/>
     );
 };
 

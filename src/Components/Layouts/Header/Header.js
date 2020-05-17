@@ -13,8 +13,8 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className="mainMenu">
-                <Grid container item xs={12} spacing={1}>
-                    <Grid item xs={7}>
+                <Grid container spacing={1}>
+                    <Grid item xs={8}>
                         <Logo/>
                     </Grid>
                     <MenuIcons/>

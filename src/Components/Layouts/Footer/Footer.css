@@ -4,7 +4,7 @@ footer {
     border: var(--border) #EA5636 solid;
     border-radius: 100px;
     height: 50px;
-    width: var(--page-container);
+    /*width: var(--page-container);*/
     padding: 30px 10px 10px 100px;
     margin: 10px auto;
 }
@@ -31,4 +31,8 @@ footer div div div:nth-child(3) a {
 
 #Licence p {
     margin-top: 0;
+}
+
+footer div div div a {
+    margin-left: 50%;
 }

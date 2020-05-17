@@ -1,0 +1,40 @@
+.mainExploreUploadsContainer {
+    width: var(--page-container);
+    margin: auto;
+}
+
+.searchForm {
+    margin: auto;
+}
+
+#searchIcon {
+    height: 40px;
+    margin-top: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px var(--red) solid;
+    background-color: var(--black);
+    caret-color: var(--red);
+}
+
+.videoUpload {
+    height: 200px;
+}
+
+.uploadsContainer {
+    margin: 50px 0;
+}
+
+.profileShortPhoto {
+    width: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px var(--white) solid;
+}

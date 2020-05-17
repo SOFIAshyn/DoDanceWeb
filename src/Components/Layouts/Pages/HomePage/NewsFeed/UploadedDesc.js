@@ -1,13 +1,13 @@
 import React from "react";
 
-const UserUploadsData = ({description, hashtags}) => (
-    <div>
-        <span>{description}</span>
+const UploadedDesc = ({description, hashtags}) => (
+    <div className={'videoDescription'}>
+        <span>{description}<br/></span>
         {hashtags && hashtags.map((hashtag) => (
-            <span>#{hashtag}</span>
+            <span className={'hashtag'}>#{hashtag.hashname} </span>
         ))
         }
     </div>
 );
 
-export default UserUploadsData;
+export default UploadedDesc;

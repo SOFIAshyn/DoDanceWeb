@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from '@material-ui/core/Grid';
 import '../HomePage.css';
 import UploadedVideo from "./UploadedVideo";
 import UserUploadsShort from "./UserUploadsShort/UserUploadsShort";
@@ -15,9 +14,7 @@ export default class NewsVideo extends React.Component{
     }
 
     componentDidMount() {
-        fetch('/profileNewsFeed').then(resp => {
-            return resp.json();
-        }).then( body => {
+        fetch('/profileNewsFeed').then(resp => { return resp.json(); }).then( body => {
             // console.log(body);
             this.setState({
                 profileNewsFeed: body,
@@ -28,17 +25,14 @@ export default class NewsVideo extends React.Component{
     render() {
         return (
             <div className={'uploadsContainer'}>
-            <Grid container xs={8} spacing={1}>
-                {this.state.profileNewsFeed && this.state.profileNewsFeed.map(function (upload) {
-                    return (
-                    <React.Fragment>
-                        <UserUploadsShort name={upload.name} surname={upload.surname} photo={upload.photo}/>
-                        <UploadedVideo url={upload.uploadLink} />
-                        <UploadedDesc description={upload.description} hashtags={upload.hashtags} />
-                    </React.Fragment>
-                    )
-                })}
-            </Grid>
+            {this.state.profileNewsFeed && this.state.profileNewsFeed.map((upload) => (
+                <div className={'uploadsSubContainer'}>
+                    <UserUploadsShort key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>
+                    <UploadedVideo key={upload.id} uploadLink={upload.uploadLink} />
+                    <UploadedDesc key={upload.id} description={upload.description} hashtags={upload.hashtags} />
+                </div>
+                )
+            )}
             </div>
         );
     }

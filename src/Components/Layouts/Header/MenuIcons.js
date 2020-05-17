@@ -14,7 +14,7 @@ export default class MenuIcons extends React.Component {
     render () {
          return (
             <React.Fragment>
-            <Grid container item xs={5} spacing={10}>
+            <Grid container item xs={4} spacing={10}>
                 <Grid item xs={1}>
                     <NavLink exact to="/" activeClassName={'selected'}>
                         <Home/>
