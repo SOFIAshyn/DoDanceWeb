@@ -5,35 +5,40 @@ import Search from './Search.js';
 import Upload from './Upload.js';
 import Profile from './Profile.js';
 import Notification from './Notification.js';
-import './Header.css'
+import './Header.css';
+import { NavLink } from "react-router-dom";
 
 
 export default class MenuIcons extends React.Component {
-     constructor() {
-        super();
-        this.state = {
-            notifications: 4,
-        };
-    }
 
     render () {
          return (
             <React.Fragment>
             <Grid container item xs={5} spacing={10}>
                 <Grid item xs={1}>
-                    <Home/>
+                    <NavLink exact to="/" activeClassName={'selected'}>
+                        <Home/>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={1}>
-                    <Search/>
+                    <NavLink exact to="/explore" activeClassName={'selected'}>
+                        <Search/>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={1}>
-                    <Upload/>
+                    <NavLink exact to="/upload" activeClassName={'selected'}>
+                        <Upload/>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={1}>
-                    <Notification/>
+                    <NavLink exact to="/notifications" activeClassName={'selected'}>
+                        <Notification/>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={1}>
-                    <Profile/>
+                    <NavLink exact to="/profile" activeClassName={'selected'}>
+                        <Profile/>
+                    </NavLink>
                 </Grid>
             </Grid>
             </React.Fragment>

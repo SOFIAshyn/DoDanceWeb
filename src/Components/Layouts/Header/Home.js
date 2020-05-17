@@ -1,11 +1,22 @@
 import React from "react";
-import homeWhite from "../../../img/icons/home-white.png";
 import './Header.css'
 
-const Home = () => (
-    <div className={'headerImg'}>
-        <img className={'menuItem'} src={homeWhite} alt="home" />
-    </div>
-);
+export default class Home extends React.Component {
+    constructor() {
+        super();
+        this.selectedIcon = "/image/icons/home-black.png"; // TODO: change icon
+        this.notSelectedIcon = "/image/icons/home-white.png";
+    }
 
-export default Home;
+    render() {
+        return (
+            <div className={'headerImg'} id={'home'}>
+                <img
+                    className={'menuItem'}
+                    src={this.notSelectedIcon}
+                    alt="home"
+                />
+            </div>
+        );
+    }
+};

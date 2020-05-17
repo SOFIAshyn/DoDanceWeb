@@ -1,0 +1,6 @@
+.shortUserData {
+    padding: 10px;
+    height: 50px;
+    border: var(--blue) var(--border) solid;
+    border-radius: 100px;
+}

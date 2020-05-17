@@ -15,8 +15,8 @@ export default class CourseItem extends React.Component {
     render() {
         return(
             <div className={'courseTotalData'}>
-                <span className={'profileDataBold'}>{this.state.points}</span>
-                <span className={'profileDataNormal'}>{this.state.courseName}</span>
+                <span className={'profileDataBold'}>{this.state.points} - </span>
+                <span className={'profileDataNormal'}>#{this.state.courseName}</span>
             </div>
         );
     }
