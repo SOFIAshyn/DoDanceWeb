@@ -23,3 +23,18 @@ input[type=text] {
     background-color: var(--black);
     caret-color: var(--red);
 }
+
+.videoUpload {
+    height: 200px;
+}
+
+.uploadsContainer {
+    margin: 50px 0;
+}
+
+.profileShortPhoto {
+    width: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px var(--white) solid;
+}

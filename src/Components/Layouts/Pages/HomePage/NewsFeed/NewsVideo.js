@@ -14,9 +14,7 @@ export default class NewsVideo extends React.Component{
     }
 
     componentDidMount() {
-        fetch('/profileNewsFeed')
-            .then(resp => { return resp.json(); })
-            .then( body => {
+        fetch('/profileNewsFeed').then(resp => { return resp.json(); }).then( body => {
             // console.log(body);
             this.setState({
                 profileNewsFeed: body,

@@ -1,7 +1,9 @@
 import React from 'react';
 import './ExplorePage.css'
+import UploadSearchItem from "./SearchUploads/UploadSearchItem";
+import UploadShortUser from "./SearchUploads/UploadShortUser"
 
-export default class ProfilePage extends React.Component {
+export default class SearchUploads extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -10,18 +12,25 @@ export default class ProfilePage extends React.Component {
     }
 
     componentDidMount() {
-        fetch('/searchUploads').then(resp => {
-            return resp.json();
-        }).then( body => {
+        fetch('/searchUploads').then(resp => { return resp.json();})
+            .then( body => {
+            console.log(body);
             this.setState({
-                profile: body,
+                searchUploads: body,
             })
         })
     }
 
     render() {
         return (
-            <div></div>
+            <div className={'uploadsContainer'}>
+            {this.state.searchUploads && this.state.searchUploads.map((upload) => (
+            <div className={'uploadsSearchSubContainer'}>
+                {/*<UploadShortUser key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>*/}
+                <UploadSearchItem key={upload.id} upload={upload} />
+            </div>
+            ))}
+            </div>
         )
     }
 }
