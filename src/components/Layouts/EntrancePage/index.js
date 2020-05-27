@@ -1,4 +1,4 @@
-import EntrancePage from './RegistrationPage';
+import EntrancePage from './EntrancePage';
 import RegistrationForm from './RegistrationForm';
 import LoginForm from './LoginForm'
 
