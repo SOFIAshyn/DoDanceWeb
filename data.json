@@ -242,6 +242,14 @@
         "confirmationPassword": "s"
       },
       "id": 0
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "d",
+        "confirmationPassword": "d"
+      },
+      "id": 1
     }
   ]
 }

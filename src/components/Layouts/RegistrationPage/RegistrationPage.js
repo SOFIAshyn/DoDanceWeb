@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios';
 
 export default class RegistrationPage extends Component {
     constructor(props) {
@@ -24,17 +25,28 @@ export default class RegistrationPage extends Component {
             confirmationPassword
         } = this.state;
 
-        fetch('/registrations', {
-            method: 'post',
-            headers: {'Content-Type':'application/json'},
-            body: JSON.stringify({
+        // fetch('/registrations', {
+        //     method: 'post',
+        //     headers: {'Content-Type':'application/json'},
+        //     body: JSON.stringify({
+        //         "user": {
+        //             "email": email,
+        //             "password": password,
+        //             "confirmationPassword": confirmationPassword
+        //         }
+        //     })
+        // })
+        axios.post(
+            "/registrations",
+            {
                 "user": {
                     "email": email,
                     "password": password,
                     "confirmationPassword": confirmationPassword
                 }
-            })
-        }).then(response => {
+            },
+            { withCredentials: true }
+        ).then(response => {
             console.log('registration response: ', response)
         }).catch(error => {
             console.log('registration error:  ', error)
