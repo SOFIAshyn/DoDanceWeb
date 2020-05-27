@@ -327,6 +327,14 @@
         "password": "s"
       },
       "id": 7
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 8
     }
   ]
 }
