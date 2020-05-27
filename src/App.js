@@ -34,12 +34,6 @@ export default class extends Component {
                         loggedInStatus: "LOGGED_IN",
                         user: response.data
                     });
-                    // axios.get("/profileNewsFeed", {withCredentials: true}).then( resp => {
-                    //     this.setState({ userNews: resp.data });
-                    // });
-                    // axios.get("/profileNotifications", {withCredentials: true}).then( resp => {
-                    //     this.setState({ userNotifications: resp.data });
-                    // });
                     console.log("dfghjkl;", this.state)
                 } else if (!response.data.logged_in && this.state.loggedInStatus === 'LOGGED_IN') {
                     this.setState({

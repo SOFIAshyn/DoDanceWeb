@@ -7,9 +7,12 @@ import './fonts/Kormotech.ttf';
 import './fonts/CoreSansA45Regular.otf';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './_reducers';
+import allReducers from './_reducers';
 
-const store = createStore(rootReducer);
+const store = createStore(
+    allReducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <Provider store={store}>

@@ -7,9 +7,9 @@ export default class EntrancePage extends Component {
         this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     }
 
-    handleSuccessfulAuth(body) {
+    handleSuccessfulAuth(data) {
         // TODO: update parent component, redirect user
-        this.props.handleLogin(body);
+        this.props.handleLogin(data);
         this.props.history.push('/home')
     }
 
