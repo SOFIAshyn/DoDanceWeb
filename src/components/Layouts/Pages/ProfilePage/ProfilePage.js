@@ -4,8 +4,8 @@ import ProfileUploads from './ProfileUploads/ProfileUploads.js';
 import './ProfilePage.css'
 
 export default class ProfilePage extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             profile: {}
         };
