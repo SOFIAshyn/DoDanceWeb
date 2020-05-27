@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import axios from 'axios';
+import React, {Component} from "react";
+import axios from "axios";
 
-export default class RegistrationPage extends Component {
+export default class RegistrationForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,26 +16,12 @@ export default class RegistrationPage extends Component {
     }
 
     handleSubmit(event) {
-        console.log('SUBMITTED ', event);
-        event.preventDefault();
-
         const {
             email,
             password,
             confirmationPassword
         } = this.state;
 
-        // fetch('/registrations', {
-        //     method: 'post',
-        //     headers: {'Content-Type':'application/json'},
-        //     body: JSON.stringify({
-        //         "user": {
-        //             "email": email,
-        //             "password": password,
-        //             "confirmationPassword": confirmationPassword
-        //         }
-        //     })
-        // })
         axios.post(
             "/registrations",
             {
@@ -47,11 +33,15 @@ export default class RegistrationPage extends Component {
             },
             { withCredentials: true }
         ).then(response => {
-            console.log('registration response: ', response)
+            if (response.status === 201) {
+                console.log(response);
+                this.props.handleSuccessfulAuth(response.data);
+            }
         }).catch(error => {
             console.log('registration error:  ', error)
-        })
-        ;
+        });
+
+        event.preventDefault();
     }
 
     handleChange(event) {

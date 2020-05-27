@@ -1,6 +1,9 @@
 {
   "profile": {
     "id": 0,
+    "logged_in": true,
+    "email": "sophiya2petryshyn@gmail.com",
+    "password": "s",
     "name": "Sofiia",
     "surname": "Petryshyn",
     "fullname": "Sofiia Petryshyn",
@@ -250,6 +253,80 @@
         "confirmationPassword": "d"
       },
       "id": 1
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "dd",
+        "confirmationPassword": "dd"
+      },
+      "id": 2
+    }
+  ],
+  "sessions": [
+    {
+      "logged_in": "false",
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "d"
+      },
+      "id": 0
+    },
+    {
+      "logged_in": "false",
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "dd"
+      },
+      "id": 1
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 2
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 3
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 4
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 5
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 6
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 7
     }
   ]
 }

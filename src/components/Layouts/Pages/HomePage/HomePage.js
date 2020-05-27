@@ -8,7 +8,7 @@ export default class HomePage extends React.Component {
         super(props);
         this.state = {
             profile: {}
-        }
+        };
     }
 
     componentDidMount() {
