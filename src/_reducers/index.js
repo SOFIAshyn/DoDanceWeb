@@ -1,8 +1,10 @@
-import profileReducer from "./profileReducer";
+import userProfile from "./profileReducer";
+import userNews from "./profileNewsReducer";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
-    profile: profileReducer
+    profile: userProfile,
+    news: userNews
 });
 
 export default allReducers;

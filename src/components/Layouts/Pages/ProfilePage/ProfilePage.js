@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import ProfileInfo from './ProfileInfo/ProfileInfo.js';
 import ProfileUploads from './ProfileUploads/ProfileUploads.js';
-import { Route } from 'react-router-dom';
 import './ProfilePage.css';
-import {connect, useDispatch} from 'react-redux';
+import {connect} from 'react-redux';
 import { uploadProfile } from '../../../../_actions';
 
 function ProfilePage(props) {
@@ -21,7 +20,6 @@ function ProfilePage(props) {
         </div>
     )
 }
-
 
 const mapStateToProps = (state) => ({
     profile: state.profile ? state.profile.profileData : {}

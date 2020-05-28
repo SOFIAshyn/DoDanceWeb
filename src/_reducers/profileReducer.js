@@ -1,12 +1,9 @@
-import { UPLOAD_PROFILE, UPLOAD_PROFILE_NEWS, UPLOAD_PROFILE_NOTIFICATIONS, UPLOAD_POST } from '../_actions/types';
+import { UPLOAD_PROFILE, UPLOAD_PROFILE_NOTIFICATIONS, UPLOAD_POST } from '../_actions/types';
 
 export default function userProfile(state=null, action=false) {
   switch (action.type) {
     case UPLOAD_PROFILE:
       return { ...state, profileData: action.profileData };
-
-    case UPLOAD_PROFILE_NEWS:
-      return { ...state, profileData: [...state.profileData, action.profileData] };
 
 //     // case UPLOAD_PROFILE_NOTIFICATIONS:
 //     //   return {

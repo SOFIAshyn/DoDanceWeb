@@ -1,42 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import ProfileShort from "../HomePage/ProfileShort/ProfileShort";
 import NewsVideo from "../HomePage/NewsFeed/NewsVideo";
+import {connect} from 'react-redux';
+import { uploadProfile } from '../../../../_actions';
 
-export default class HomePage extends React.Component {
+function HomePage(props) {
+    useEffect(() => {
+        if (props.profile)
+            props.uploadProfile();
+    }, []);
 
+    console.log('hh:', props);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            profile: {}
-        };
-    }
-
-    componentDidMount() {
-        fetch('/profile').then(resp => {
-            return resp.json();
-        }).then( body => {
-            this.setState({
-                profile: body,
-            })
-        })
-    }
-
-    render() {
-        return (
-            <div className={'page'}>
-            <Grid container spacing={1}>
-                <Grid container item xs={8} spacing={1}>
-                    <NewsVideo key={this.state.profile.id} profileInfo={this.state.profile} />
-                </Grid>
-                <Grid container item xs={4} spacing={1}>
-                    <div className={'shortUserData'}>
-                    <ProfileShort key={this.state.profile.id} profileInfo={this.state.profile} />
-                    </div>
-                </Grid>
+    return (
+        <div className={'page'}>
+        <Grid container spacing={1}>
+            <Grid container item xs={8} spacing={1}>
+                <NewsVideo />
+                 {/*key={props.profile.id} profileInfo={props.profile}*/}
             </Grid>
-            </div>
-        )
-    };
+            <Grid container item xs={4} spacing={1}>
+                <div className={'shortUserData'}>
+                <ProfileShort key={props.profile.id} profileInfo={props.profile} />
+                </div>
+            </Grid>
+        </Grid>
+        </div>
+    )
 };
+
+const mapStateToProps = (state) => ({
+    profile: state.profile ? state.profile.profileData : {}
+});
+const mapDispatchToProps = (dispatch) => ({
+    uploadProfile: () => dispatch(uploadProfile())
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(HomePage);

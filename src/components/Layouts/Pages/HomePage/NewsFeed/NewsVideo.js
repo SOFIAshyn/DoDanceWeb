@@ -1,39 +1,42 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../HomePage.css';
 import UploadedVideo from "./UploadedVideo";
 import UserUploadsShort from "./UserUploadsShort/UserUploadsShort";
 import UploadedDesc from "./UploadedDesc";
+import {connect} from 'react-redux';
+import { uploadProfileNews } from '../../../../../_actions';
 
 
-export default class NewsVideo extends React.Component{
-    constructor() {
-        super();
-        this.state = {
-            profileNewsFeed: []
-        }
-    }
+function NewsVideo(props) {
+    useEffect(() => {
+        // if (props.profileNewsFeed)
+        props.uploadProfileNews();
+    }, []);
 
-    componentDidMount() {
-        fetch('/profileNewsFeed').then(resp => { return resp.json(); }).then( body => {
-            // console.log(body);
-            this.setState({
-                profileNewsFeed: body,
-            })
-        })
-    }
+    console.log("heere: ", props.profileNews);
 
-    render() {
-        return (
-            <div className={'uploadsContainer'}>
-            {this.state.profileNewsFeed && this.state.profileNewsFeed.map((upload) => (
-                <div className={'uploadsSubContainer'}>
-                    <UserUploadsShort key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>
-                    <UploadedVideo key={upload.id} uploadLink={upload.uploadLink} />
-                    <UploadedDesc key={upload.id} description={upload.description} hashtags={upload.hashtags} />
-                </div>
-                )
-            )}
+    return (
+        <div className={'uploadsContainer'}>
+        {props.profileNews && props.profileNews.map((upload) => (
+            <div className={'uploadsSubContainer'}>
+                <UserUploadsShort key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>
+                <UploadedVideo key={upload.id} uploadLink={upload.uploadLink} />
+                <UploadedDesc key={upload.id} description={upload.description} hashtags={upload.hashtags} />
             </div>
-        );
-    }
+            )
+        )}
+        </div>
+    );
 }
+
+const mapStateToProps = (state) => ({
+    profileNews: state.news ? state.news.profileDataNews : []
+});
+const mapDispatchToProps = (dispatch) => ({
+    uploadProfileNews: () => dispatch(uploadProfileNews())
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(NewsVideo);
