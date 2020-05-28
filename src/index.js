@@ -6,12 +6,16 @@ import * as serviceWorker from './serviceWorker';
 import './fonts/Kormotech.ttf';
 import './fonts/CoreSansA45Regular.otf';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, compose, applyMiddleware } from 'redux';
 import allReducers from './_reducers';
+import ReduxThunk from 'redux-thunk';
 
 const store = createStore(
     allReducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    compose(
+      applyMiddleware(ReduxThunk),
+      window.devToolsExtension ? window.devToolsExtension() : f => f
+    )
 );
 
 ReactDOM.render(

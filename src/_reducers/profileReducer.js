@@ -1,13 +1,13 @@
 import { UPLOAD_PROFILE, UPLOAD_PROFILE_NEWS, UPLOAD_PROFILE_NOTIFICATIONS, UPLOAD_POST } from '../_actions/types';
 
-export default function userProfile(state=null, action) {
-//   switch (action.type) {
-//     case UPLOAD_PROFILE:
-//       return { ...state, todoLists: action.todoLists };
-//
-//     // case UPLOAD_PROFILE_NEWS:
-//     //   return { ...state, todoLists: [...state.todoLists, action.todoList] };
-//     //
+export default function userProfile(state=null, action=false) {
+  switch (action.type) {
+    case UPLOAD_PROFILE:
+      return { ...state, profileData: action.profileData };
+
+    case UPLOAD_PROFILE_NEWS:
+      return { ...state, profileData: [...state.profileData, action.profileData] };
+
 //     // case UPLOAD_PROFILE_NOTIFICATIONS:
 //     //   return {
 //     //     ...state,
@@ -17,7 +17,7 @@ export default function userProfile(state=null, action) {
 //     // case UPLOAD_POST:
 //     //   return { ...state, todoLists: [...state.todoLists, action.todoList] };
 //
-//     default:
-//       return state;
-//   }
-}
+    default:
+      return state;
+  }
+};

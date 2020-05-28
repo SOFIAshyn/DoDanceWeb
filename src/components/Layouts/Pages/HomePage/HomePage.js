@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import ProfileShort from "../HomePage/ProfileShort/ProfileShort";
 import NewsVideo from "../HomePage/NewsFeed/NewsVideo";
 
 export default class HomePage extends React.Component {
+
+
     constructor(props) {
         super(props);
         this.state = {
