@@ -5,11 +5,23 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fonts/Kormotech.ttf';
 import './fonts/CoreSansA45Regular.otf';
+import { Provider } from 'react-redux';
+import { createStore, compose, applyMiddleware } from 'redux';
+import allReducers from './_reducers';
+import ReduxThunk from 'redux-thunk';
+
+const store = createStore(
+    allReducers,
+    compose(
+      applyMiddleware(ReduxThunk),
+      window.devToolsExtension ? window.devToolsExtension() : f => f
+    )
+);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

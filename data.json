@@ -1,5 +1,9 @@
-{ "profile": {
+{
+  "profile": {
     "id": 0,
+    "logged_in": true,
+    "email": "sophiya2petryshyn@gmail.com",
+    "password": "s",
     "name": "Sofiia",
     "surname": "Petryshyn",
     "fullname": "Sofiia Petryshyn",
@@ -8,32 +12,41 @@
     "telegramLink": "https://web.telegram.org/#/login",
     "instagram": "sofia.petryshyn",
     "instagramLink": "https://www.instagram.com/sofia.petryshyn/",
-    "courses": [{
-      "id": 0,
-      "courseName": "dance_addiction_1",
-      "value": 78
-    }, {
-      "id": 2,
-      "courseName": "dance_addiction_2",
-      "value": 50
-    }],
+    "courses": [
+      {
+        "id": 0,
+        "courseName": "dance_addiction_1",
+        "value": 78
+      },
+      {
+        "id": 2,
+        "courseName": "dance_addiction_2",
+        "value": 50
+      }
+    ],
     "total": 128,
-    "uploads": [{
+    "uploads": [
+      {
         "id": 0,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
+      },
+      {
         "id": 1,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
+      },
+      {
         "id": 2,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
+      },
+      {
         "id": 3,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
+      },
+      {
         "id": 4,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
+      },
+      {
         "id": 5,
         "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
       }
@@ -44,7 +57,8 @@
       "id": 0,
       "topic": "Yana Olefir left the feedback on your homework",
       "time": "2020-04-23T18:25:43.511Z"
-    }, {
+    },
+    {
       "id": 1,
       "topic": "Marta Kits left the feedback on your homework",
       "time": "2020-04-21T12:25:43.511Z"
@@ -62,12 +76,14 @@
         {
           "id": 0,
           "hashname": "dance_addition_1"
-        }, {
+        },
+        {
           "id": 1,
           "hashname": "hw_2"
         }
       ]
-    }, {
+    },
+    {
       "id": 1,
       "name": "Anna",
       "surname": "Petryshyn",
@@ -78,92 +94,117 @@
         {
           "id": 0,
           "hashname": "dance_addition_2"
-        }, {
+        },
+        {
           "id": 1,
           "hashname": "hw_4"
         }
       ]
     }
   ],
-  "userAccounts": [{
-    "id": 0,
-    "name": "Sofiia",
-    "surname": "Petryshyn",
-    "telegram": "sofiyka",
-    "telegramLink": "https://web.telegram.org/#/login",
-    "instagram": "sofia.petryshyn",
-    "instagramLink": "https://www.instagram.com/sofia.petryshyn/",
-    "courses": [{
+  "userAccounts": [
+    {
       "id": 0,
-      "courseName": "dance_addiction_1",
-      "value": 78
-    }, {
-      "id": 2,
-      "courseName": "dance_addiction_1",
-      "value": 50
-    }],
-    "total": 128,
-    "uploads": [{
-        "id": 0,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
-        "id": 1,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
-        "id": 2,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
-        "id": 3,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
-        "id": 4,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }, {
-        "id": 5,
-        "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "name": "Olya",
-    "surname": "Petryshyn",
-    "photo": "/image/profile.jpeg",
-    "telegram": "olya.petryshyn",
-    "telegramLink": "https://web.telegram.org/#/login",
-    "instagram": "olya.petryshyn",
-    "instagramLink": "https://www.instagram.com/olya_petryshyn/",
-    "courses": [{
-      "id": 0,
-      "courseName": "dance_addiction_1",
-      "value": 23
-    }, {
+      "login": "sophiya2petryshyn@gmail.com",
+      "password": "sophiya",
+      "name": "Sofiia",
+      "surname": "Petryshyn",
+      "telegram": "sofiyka",
+      "telegramLink": "https://web.telegram.org/#/login",
+      "instagram": "sofia.petryshyn",
+      "instagramLink": "https://www.instagram.com/sofia.petryshyn/",
+      "courses": [
+        {
+          "id": 0,
+          "courseName": "dance_addiction_1",
+          "value": 78
+        },
+        {
+          "id": 2,
+          "courseName": "dance_addiction_1",
+          "value": 50
+        }
+      ],
+      "total": 128,
+      "uploads": [
+        {
+          "id": 0,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        },
+        {
+          "id": 1,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        },
+        {
+          "id": 2,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        },
+        {
+          "id": 3,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        },
+        {
+          "id": 4,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        },
+        {
+          "id": 5,
+          "uploadLink": "https://www.youtube.com/embed/Eb5dsG7L7lo?autoplay=0"
+        }
+      ]
+    },
+    {
       "id": 1,
-      "courseName": "iLikeDance_1",
-      "value": 30
-    }],
-    "total": 53,
-    "uploads": [{
-        "id": 0,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }, {
-        "id": 1,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }, {
-        "id": 2,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }, {
-        "id": 3,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }, {
-        "id": 4,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }, {
-        "id": 5,
-        "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-      }
-    ]
-  }],
+      "login": "olya.petryshyn@gmail.com",
+      "password": "olya",
+      "name": "Olya",
+      "surname": "Petryshyn",
+      "photo": "/image/profile.jpeg",
+      "telegram": "olya.petryshyn",
+      "telegramLink": "https://web.telegram.org/#/login",
+      "instagram": "olya.petryshyn",
+      "instagramLink": "https://www.instagram.com/olya_petryshyn/",
+      "courses": [
+        {
+          "id": 0,
+          "courseName": "dance_addiction_1",
+          "value": 23
+        },
+        {
+          "id": 1,
+          "courseName": "iLikeDance_1",
+          "value": 30
+        }
+      ],
+      "total": 53,
+      "uploads": [
+        {
+          "id": 0,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        },
+        {
+          "id": 1,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        },
+        {
+          "id": 2,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        },
+        {
+          "id": 3,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        },
+        {
+          "id": 4,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        },
+        {
+          "id": 5,
+          "uploadLink": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
+        }
+      ]
+    }
+  ],
   "searchUploads": [
     {
       "id": 0,
@@ -174,7 +215,8 @@
         "photo": "/image/profile.jpeg"
       },
       "video": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0"
-    }, {
+    },
+    {
       "id": 1,
       "user": {
         "id": 1,
@@ -183,7 +225,8 @@
         "photo": "/image/profile.jpeg"
       },
       "video": "https://www.youtube.com/embed/oA6vjBPlmCE?autoplay=0"
-    }, {
+    },
+    {
       "id": 2,
       "user": {
         "id": 0,
@@ -192,6 +235,338 @@
         "photo": "/image/profile.jpeg"
       },
       "video": "https://www.youtube.com/embed/i2qG4weEbLo?autoplay=0"
+    }
+  ],
+  "registrations": [
+    {
+      "user": {
+        "email": "petryshyn@ucu.edu.ua",
+        "password": "s",
+        "confirmationPassword": "s"
+      },
+      "id": 0
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "d",
+        "confirmationPassword": "d"
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "dd",
+        "confirmationPassword": "dd"
+      },
+      "id": 2
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "dd",
+        "confirmationPassword": "dd"
+      },
+      "id": 3
+    },
+    {
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss",
+        "confirmationPassword": "ss"
+      },
+      "id": 4
+    }
+  ],
+  "sessions": [
+    {
+      "logged_in": "false",
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "d"
+      },
+      "id": 0
+    },
+    {
+      "logged_in": "false",
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "dd"
+      },
+      "id": 1
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 2
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 3
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 4
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 5
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 6
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 7
+    },
+    {
+      "logged_in": true,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "s"
+      },
+      "id": 8
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "2"
+      },
+      "id": 9
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "2"
+      },
+      "id": 10
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "2"
+      },
+      "id": 11
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "2"
+      },
+      "id": 12
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "2"
+      },
+      "id": 13
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 14
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 15
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 16
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 17
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 18
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 19
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 20
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 21
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 22
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 23
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 24
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 25
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 26
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 27
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 28
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 29
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 30
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 31
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 32
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 33
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 34
+    },
+    {
+      "logged_in": false,
+      "user": {
+        "email": "sophiya2petryshyn@gmail.com",
+        "password": "ss"
+      },
+      "id": 35
     }
   ]
 }

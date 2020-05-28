@@ -2,6 +2,7 @@ import React from 'react';
 import './ExplorePage.css'
 import UploadSearchItem from "./SearchUploads/UploadSearchItem";
 import UploadShortUser from "./SearchUploads/UploadShortUser"
+import {Container} from "react-grid-system";
 
 export default class SearchUploads extends React.Component {
     constructor() {
@@ -24,12 +25,15 @@ export default class SearchUploads extends React.Component {
     render() {
         return (
             <div className={'uploadsContainer'}>
-            {this.state.searchUploads && this.state.searchUploads.map((upload) => (
-            <div className={'uploadsSearchSubContainer'}>
-                {/*<UploadShortUser key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>*/}
-                <UploadSearchItem key={upload.id} upload={upload} />
-            </div>
-            ))}
+                <Container fluid>
+                {this.state.searchUploads && this.state.searchUploads.map((upload) => (
+
+                <div className={'uploadsSearchSubContainer'}>
+                    {/*<UploadShortUser key={upload.id} name={upload.name} surname={upload.surname} photo={upload.photo}/>*/}
+                    <UploadSearchItem key={upload.id} upload={upload} />
+                </div>
+                ))}
+                </Container>
             </div>
         )
     }
